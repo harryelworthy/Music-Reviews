@@ -1,4 +1,4 @@
-import delimited /Users/harry/Mus/reviews.csv, clear
+import delimited premerged.csv, clear
 graph drop _all 
 drop if pitchfork == .
 reg fantano pitchfork
