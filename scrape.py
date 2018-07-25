@@ -8,23 +8,9 @@ from re import sub
 from decimal import Decimal
 import time
 
-hdr = {'User-Agent': 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.2) Gecko/20100316 Firefox/3.6.2',
-       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-       'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
-       'Accept-Encoding': 'none',
-       'Accept-Language': 'en-US,en;q=0.8',
-       'Connection': 'keep-alive'}
-
-def toMSquared(s):
-    if s[-1:] == 'm':
-        return int(s[:-2].replace(",",""))
-    if s[-1:]=='d':
-        return float(s[:-8].replace(",",""))*10000
-    return 0
 
 def chop(s):
     return str(s)[2:-2]
-
 
 rowslist = []
 urltimes = []
@@ -61,4 +47,4 @@ for i in range(1,1691):
 
 df = pd.DataFrame(rowslist)
 df.set_index('id')
-df.to_csv('cyc.csv')
+df.to_csv('pf.csv')
