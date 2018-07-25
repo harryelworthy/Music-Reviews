@@ -1,4 +1,4 @@
-# MusicReviews
+# MusicReviews - WIP
 
 The main file to check here is [reviews.ipynb](reviews.ipynb), a Jupyter notebook. This uses [pitchfork.sqlite](pitchfork.sqlite) and [needledrop.csv](needledrop.csv) as sources, cited in the notebook. 
 
